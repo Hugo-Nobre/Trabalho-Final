@@ -1,1 +1,1 @@
-https://hugo-nobre.github.io/Trabalho-final/
+https://hugo-nobre.github.io/Trabalho-Final/
