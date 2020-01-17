@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Funções</title>
+</head>
+<body>
+
+	<h1> Estudo de javascript</h1>
+	<p>Preço da mota <span id="sm"></span></p>
+<!-- função normal -->
+
+	<script>
+		
+		//função
+		function alerta(n, m){
+			var soma = n + m;
+			alert("estou dentro da função"+n+" "+m+" = "+soma);
+		//
+		document.getElementById("sm").innerHTML = soma;
+
+		}
+
+		alerta(5, 6);
+
+	</script>
+<p>Total: <span id="tt"></span></p>
+	<script>
+		function soma(p, e){
+			//input (txt) converter ao int
+			var total = parseInt(p) + parseInt (e);
+			document.getElementById("tt").innerHTML = total;
+
+		}
+	</script>
+
+<form>
+	<input type="text" name="n1" value="">
+	<input type="text" name="n2" value="">
+	<input type="button" name="" onclick="soma(form.n1.value, form.n2.value);" value="OK">
+</form>
+
+<!-- exemplos de array--->
+
+<p>1 posição: <span id="1p"></span></p>
+<p>2 posição: <span id="2p"></span></p>
+<p>3 posição: <span id="3p"></span></p>
+<script>
+	
+var a = [10, 20, 50];
+document.getElementById("1p") .innerHTML = a[0];
+document.getElementById("2p") .innerHTML = a[1];
+document.getElementById("3p") .innerHTML = a[2];
+document.getElementById("4p") .innerHTML = a[0]+" "+a[1]+" "+a[2];
+
+</script>
+
+<!--- Areay multi-->
+
+<p>Multi Array: <span id="mx"></span></p>
+<script> 
+
+var m = [
+
+    [10, 20, 30],
+    [20, 50, 60],
+    [70, 80, 90]
+];
+var tx = [
+
+    ["tx1", "tx2"],
+    ["ec", "tr"]
+];
+
+document.getElementById("mx") .innerHTML = m[0][0];
+document.getElementById("xm") .innerHTML = tx[0][0]+"<b>valor:</b>"+m[1][2];
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
